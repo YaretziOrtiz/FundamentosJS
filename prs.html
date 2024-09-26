@@ -13,35 +13,73 @@
             display: grid;
             place-items: center;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #b0cef3;
         }
+
         .content {
             width: 60%;
-            height: inherit;
+            height: 80%;
+            background-color: rgb(86, 146, 202);
+            border: 3px solid #064699; 
+            border-radius: 10px;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
+            align-items: center;
             text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            padding: 20px;
         }
-        .row { width: 100%;}
-        .users {display: flex; }
-        .users div {width: 50%;}
+
+        .row {
+            width: 100%;
+        }
+
+        .users {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        .users div {
+            width: 45%;
+        }
+
         button {
             width: 200px;
             height: 50px;
             border: none;
-            background-color: rgb(247, 123, 241);
+            background-color: #3d69a3;
             color: rgb(255, 255, 255);
             font-weight: bold;
+            cursor: pointer;
         }
+
         button:hover {
             background-color: rgb(106, 194, 106);
-
         }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #85aee4;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: rgb(134, 194, 106);
+        }
+
     </style>
 </head>
 <body>
+    <center><div class="row"><button>Jugar</button></div></center>
     <div class="content">
-        <div class="row"><button>Jugar</button></div>
         <div class="row users">
             <div id="user">
                 <h2>Usuario:</h2>
@@ -56,6 +94,11 @@
             <h1>Resultado!</h1>
         </div>
     </div>
+    
+    <footer>
+        <a href="./index.html" class="button">Inicio</a>
+    </footer>
+    
     <script src="./prs.js"></script>
 </body>
 </html>
